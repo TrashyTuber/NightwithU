@@ -1,6 +1,30 @@
 import { useState } from 'react'
 import './App.css'
 import NavBar from './NavBar'
+import Footer from './Footer'
+
+function Group({title, description}) {
+  const [isJoined, setIsJoined] = useState(false);
+
+  return (
+    <div>
+      <h3>{title}</h3>
+
+      <p>{description}</p>
+
+      <div className="button-row">
+        <button
+          className={`buttonstyle join-button ${isJoined ? 'active' : ''}`}
+          onClick={() => setIsJoined(!isJoined)}
+        >
+          {isJoined ? "Joined" : "Join"}
+        </button>
+
+        <button className="buttonstyle">Learn More</button>
+      </div>
+    </div>
+  );
+}
 
 function App() {
   return (
@@ -11,11 +35,11 @@ function App() {
         href="//fonts.googleapis.com/css?family=Quicksand"
       />
 
-      <NavBar /> 
+      <NavBar />
 
       <main>
         <h1>Explore</h1>
-        
+
         <h2>People</h2>
         <div className="grid-container">
           <div>
@@ -43,25 +67,23 @@ function App() {
 
         <h2>Groups</h2>
         <div className="grid-container">
-          <div>
-            <h3>Cool Kids</h3>
-            <button className="buttonstyle">Learn More</button>
-          </div>
-          <div>
-            <h3>Valorant Grinders</h3>
-            <button className="buttonstyle">Learn More</button>
-          </div>
-          <div>
-            <h3>Some Frat</h3>
-            <button className="buttonstyle">Learn More</button>
-          </div>
-          <div>
-            <h3>Chess Nerds</h3>
-            <button className="buttonstyle">Learn More</button>
-          </div>
+          <Group 
+            title="Cool Kids" 
+            description={"Placeholder description"}/>
+          <Group 
+            title="Valorant Grinders" 
+            description={"Placeholder description"}/>
+          <Group 
+            title="Some Frat Beta Beta Beta" 
+            description={"Placeholder description"}/>
+          <Group 
+            title="Chess Nerds" 
+            description={"Placeholder description"}/>
         </div>
         <button className="buttonstyle">See More</button>
       </main>
+
+      <Footer />
     </>
   )
 }

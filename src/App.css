@@ -1,15 +1,21 @@
-:root, body, #root {
+:root,
+body,
+#root {
   margin: 0;
   padding: 0;
   width: 100%;
-  max-width: none;    /* This removes the 1280px limit Vite often sets */
-  display: block;     /* This stops the "centering" behavior */
-  text-align: left;   /* Resets the default center alignment */
+  max-width: none;
+  /* This removes the 1280px limit Vite often sets */
+  display: block;
+  /* This stops the "centering" behavior */
+  text-align: left;
+  /* Resets the default center alignment */
 }
 
 main {
   width: 100%;
-  box-sizing: border-box; /* Ensures padding doesn't push the page off-screen */
+  box-sizing: border-box;
+  /* Ensures padding doesn't push the page off-screen */
   padding: 150px 25px;
 }
 
@@ -44,13 +50,14 @@ main {
     margin-top: 0;
     text-align: Left;
     font-size: 25px;
-    background-color: #62466b;
+    background-color: #26262c;
   }
 
   p {
     text-align: Left;
     font-size: 15px;
-    background-color: #62466b;
+    color: #a1a1aa;
+    background-color: #26262c;
   }
 
   .grid-container {
@@ -61,14 +68,14 @@ main {
   }
 
   .grid-container>div {
-    background-color: #62466b;
+    background-color: #26262c;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
   }
 
   .buttonstyle {
-    background-color: #1f1a23;
+    background-color: #4E2A84;
     border: 1px solid white;
     color: white;
     padding: 10px 20px;
@@ -80,6 +87,29 @@ main {
 
   .buttonstyle:hover {
     background-color: white;
-    color: #1f1a23;
+    color: #4E2A84;
+  }
+
+  .button-row {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    margin-top: 15px;
+  }
+
+  .join-button {
+    background-color: transparent;
+    border: 1px solid white;
+  }
+
+  .join-button.active {
+    background-color: #287e29;
+    color: white;
+    border-color: white;
+  }
+
+  .join-button:not(.active):hover {
+    background-color: #287e29;
+    color: white;
   }
 }

@@ -4,7 +4,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #1f1a23;
+  background-color: #401F68;
   z-index: 1000;
 
   .nav-container {
@@ -30,7 +30,7 @@ nav {
   }
 
   .nav-left a:hover {
-    color: #cbbad1;
+    color: #E4E0EE;
   }
 
   /*logo*/
@@ -60,7 +60,7 @@ nav {
   }
 
   .nav-right a:hover {
-    background-color: #cbbad1;
-    color: #1f1a23;
+    background-color: #E4E0EE;
+    color: #401F68;
   }
 }
