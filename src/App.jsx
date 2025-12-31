@@ -68,16 +68,16 @@ function App() {
         <h2>Groups</h2>
         <div className="grid-container">
           <Group 
-            title="Cool Kids" 
+            title={"Cool Kids"}
             description={"Placeholder description"}/>
           <Group 
-            title="Valorant Grinders" 
+            title={"Valorant Grinders"}
             description={"Placeholder description"}/>
           <Group 
-            title="Some Frat Beta Beta Beta" 
+            title={"Some Frat Beta Beta Beta"}
             description={"Placeholder description"}/>
           <Group 
-            title="Chess Nerds" 
+            title={"Chess Nerds"}
             description={"Placeholder description"}/>
         </div>
         <button className="buttonstyle">See More</button>
