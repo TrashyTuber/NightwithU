@@ -1,27 +1,14 @@
-:root,
-body,
-#root {
+:root, body, #root {
   margin: 0;
   padding: 0;
   width: 100%;
-  max-width: none;
-  /* This removes the 1280px limit Vite often sets */
-  display: block;
-  /* This stops the "centering" behavior */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   text-align: left;
-  /* Resets the default center alignment */
-}
-
-main {
-  width: 100%;
-  box-sizing: border-box;
-  /* Ensures padding doesn't push the page off-screen */
-  padding: 150px 25px;
 }
 
 #root {
-  margin: 0;
-  padding: 0;
   font-family: "Quicksand", sans-serif;
   background-color: #0e0e10;
   color: white;
@@ -29,12 +16,14 @@ main {
 
 main {
   height: 100%;
-  padding: 100px 25px 50px 25px;
+  padding: 100px 25px;
+  width: 100%;
+  box-sizing: border-box;
   color: white;
 
   h1 {
     text-align: Left;
-    font-size: 40px;
+    font-size: 60px;
     padding-top: 15px;
     padding-bottom: 15px;
   }

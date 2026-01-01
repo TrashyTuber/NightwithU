@@ -51,7 +51,7 @@ function Explore() {
                 </div>
 
                 <Link to="/all-profiles">
-                    <button className="buttonstyle">See More</button>
+                    <button className="buttonstyle" style={{ marginBottom: '75px' }}>See More</button>
                 </Link>
 
                 <h2>Groups</h2>
@@ -69,7 +69,7 @@ function Explore() {
                         title={"Chess Nerds"}
                         description={"Placeholder description"} />
                 </div>
-                <button className="buttonstyle">See More</button>
+                <button className="buttonstyle" style={{ marginBottom: '75px' }}>See More</button>
             </main>
         </>
     )

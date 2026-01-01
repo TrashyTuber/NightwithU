@@ -27,7 +27,7 @@ function NavBar() {
 
         <div className="nav-left">
           <Link to="/">Home</Link>
-          <Link to="/Explore">Explore</Link>
+          <Link to="/">Explore</Link>
           <a href="#groups">Groups</a>
           <a href="#chat">Chat</a>
         </div>
