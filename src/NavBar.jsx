@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './NavBar.css'
 
 function NavBar() {
@@ -23,10 +24,10 @@ function NavBar() {
   return (
     <nav className={scrolled ? 'scrolled-nav' : ''}>
       <div className="nav-container">
-                
+
         <div className="nav-left">
-          <a href="#home">Home</a>
-          <a href="#explore">Explore</a>
+          <Link to="/">Home</Link>
+          <Link to="/Explore">Explore</Link>
           <a href="#groups">Groups</a>
           <a href="#chat">Chat</a>
         </div>

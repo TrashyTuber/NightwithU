@@ -112,4 +112,12 @@ main {
     background-color: #287e29;
     color: white;
   }
+
+  .group {
+    transition: 0.3s;
+  }
+
+  .group:hover {
+    transform: translateY(-5px);
+  }
 }

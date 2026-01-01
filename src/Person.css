@@ -1,0 +1,36 @@
+.person {
+  background-color: #26262c; 
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px black;
+}
+
+.person:hover {
+  transform: translateY(-5px);
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;
+  justify-content: left;
+  margin-top: 10px;
+}
+
+.tag-pill {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 20px; 
+  color: white; 
+  background-color: #444; 
+}
+
+/* Custom tags */
+.tag-gaming { background-color: #b62020; } 
+.tag-club { background-color: #1e50a1; } 
+.tag-chill    { background-color: #b7216c; } 
+.tag-music  { background-color: #168963; } 
+.tag-party { background-color: #c28720; }
