@@ -6,7 +6,7 @@ import Person from './Person';
 function Profiles() {
   const [people, setPeople] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const API_url = "https://disc-assignment-5-users-api-iyct.onrender.com/api/users";
+  const API_url = "http://localhost:3000/users";
 
   const [error, setError] = useState(null);
 
@@ -46,19 +46,16 @@ function Profiles() {
       <main>
         <h1>People</h1>
 
-        {isLoading && <p>Loading profiles...</p>}
-        {error && <p style={{ color: 'red' }}>{error}</p>}
+        {isLoading && <h2>Loading profiles...</h2>}
+        {error && <h2 style={{ color: 'red' }}>{error}</h2>}
 
         {!isLoading && !error && (
           <div className="grid-container">
             {people.map((user) => (
               <Person
                 key={user.id}
-                name={`${user.firstName} ${user.lastName}`}
-
-                tags={[
-                  /* Leaving tags empty for now since user object doesn't match with the tags I want */
-                ]}
+                name={`${user.first_name} ${user.last_name}`}
+                tags={user.tags || []}
               />
             ))}
           </div>
